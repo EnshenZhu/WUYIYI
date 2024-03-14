@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def softmax(x):
-    exp_x = np.exp(x)
+def softmax(x_ls):
+    exp_x = np.exp(x_ls)
     return exp_x / exp_x.sum(axis=0, keepdims=True)
 
 
